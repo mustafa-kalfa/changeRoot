@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    font-size: 50px;
+    font-family: "Paytone One";
+    font-weight: 300;
+
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+
+}
+
+body{
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+}
+
+h3{
+    color: var(--dark-blue);
+}
+
+h2{
+    color: var(--lime-green);
+}
+
+.dark-mode{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;    
+    border: solid 2px;
+    border-color: var(--dark-blue);
+    border-radius: 5px;
+    background-color: var(--dark-blue)
+}
+
+.dark-mode:hover{
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 40px;
+  color: var(--dark-blue);
+  margin-right: 10px;
+}
+
+.code-symbol{
+    font-size: 50px;
+    color: var(--lime-green);
+}
+
+.dark-mode-symbol{
+    margin-right: 0;
+    color: var(--light-grayish-blue);
+}
